@@ -19,7 +19,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 export default function BarP() {
   return <div> 
         <div className="gaugechart">
-        <div className="subnavbar">
+        <div className =" subnavbar">
           <span className="titlePichart">Qte Produites</span>
           <DataThresholdingIcon className="helpIcon" />
          
