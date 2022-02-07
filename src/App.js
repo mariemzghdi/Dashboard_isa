@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import Box from '@mui/material/Box';
 import './App.css';
 
+import RowAndColumnSpacing from './componenets/Grid/RowAndColumnSpacing';
+import RowAndColumbSpa2 from './componenets/Grid/RowAndColumbSpa2';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+        
+        <RowAndColumnSpacing />
+        <RowAndColumbSpa2 />
+        
+      </Box>
+    
+    
   );
 }
 
