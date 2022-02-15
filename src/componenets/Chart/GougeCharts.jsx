@@ -14,7 +14,7 @@ export default function GougeCharts() {
 
   
   async function getDonnees() {
-    const reponse = await axios.get(`http://localhost:8080/api/tutorials/published`)
+    const reponse = await axios.get(`http://localhost:8080/api/pack_operation/Rend`)
     return(setRows(reponse.data) )
   
     
