@@ -5,6 +5,8 @@ import Paper from '@mui/material/Paper';
 import GougeCharts from '../Chart/GougeCharts';
 import BarP from '../Chart/BarP';
 import './Grid.css';
+import '../Chart/SmileC';
+import SmileC from '../Chart/SmileC';
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -26,7 +28,7 @@ export default function RowAndColumnSpacing() {
       <BarP />
     </Box>
     <Box gridColumn="span 3" className='Box'>
-      <Item>xs=4</Item>
+      <SmileC/>
     </Box>
     <Box gridColumn="span 3" className='Box'>
       <Item>xs=4</Item>

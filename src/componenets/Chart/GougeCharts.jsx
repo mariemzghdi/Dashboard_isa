@@ -27,10 +27,10 @@ useEffect(()=>{
   const Rendement = rows.map(obj =>{
   return parseFloat(obj.Rend); 
 }) 
- console.log(Rendement)
+/*  console.log(Rendement)
 
 console.log(rows)
-console.log(typeof(Rendement[0]))
+console.log(typeof(Rendement[0])) */
 function numAverage(Rendement) {
   var b = Rendement.length,
       c = 0, i;
@@ -52,7 +52,7 @@ function numAverage(Rendement) {
         </div>
         <GaugeChart
           id="gauge-chart"
-          textColor="#000"
+          textColor='rgba(0, 0, 0, 0.726)'
           cornerRadius={3}
           marginInPercent={0.015}
           arcWidth={0.3}

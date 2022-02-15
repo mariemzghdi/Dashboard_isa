@@ -43,3 +43,21 @@
     
 
 }
+.Comments{
+    font-size: 20px;
+   color: rgba(0, 0, 0, 0.726);
+    font-weight: 500;
+    margin-top: 80px;
+   margin-left: 110px;
+  
+
+}
+.icon{
+    margin-top: 70px;
+    margin-left: 140px;
+    color: #99ceff;
+    float: centre ;
+    
+    font-size: 50px;
+   
+}
