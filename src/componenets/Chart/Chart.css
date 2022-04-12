@@ -1,6 +1,7 @@
 #gauge-chart {
   margin-top: 40px;
 }
+
 .subnavbar {
   height: 36px;
 }
@@ -12,12 +13,14 @@
   margin-top: 10px;
   margin-left: 15px;
 }
+
 .Separtormini {
   border: 1px solid #e6e9ed;
   border-radius: 1px;
   margin-left: 15px;
   margin-top: 15px;
 }
+
 .selectItem {
   padding: 3px;
   margin-top: -20px;
@@ -30,19 +33,23 @@
   color: #a1a3a8;
   float: right;
 }
-.LineProg {
-  color: #351a81;
+
+.iconP{
   height: 40px;
   width: 100%;
-  margin-top: 70px;
+  justify-content: space-between;
 }
+
 .Comments {
-  font-size: 20px;
+   font-size: 30px;
+  /* margin-top: 50px;  */
+  /* display:flex ; */
+ /*  align-items: center; */
+  font-weight: 600;
+  margin-left: 50px;
   color: rgba(0, 0, 0, 0.726);
-  font-weight: 500;
-  margin-top: 80px;
-  margin-left: 110px;
 }
+
 .icon {
   margin-top: 70px;
   margin-left: 140px;
@@ -50,3 +57,23 @@
   float: centre;
   font-size: 50px;
 }
+
+.iconIm {
+  margin-top: 40px;
+   margin-left: 250px;
+  color: #99ceff;
+  width: 140px;
+}
+.iconE{
+  margin-top: 40px;
+   margin-left: 450px;
+  color: #99ceff;
+  width: 160px; 
+}
+.iconC{
+  margin-top: 40px;
+  margin-left: 470px;
+ color: #99ceff;
+ width: 150px;
+}
+

@@ -1,40 +1,24 @@
-import React from 'react';
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import GougeCharts from '../Chart/GougeCharts';
-import BarP from '../Chart/BarP';
-import './Grid.css';
-import '../Chart/SmileC';
-import SmileC from '../Chart/SmileC';
+import React from "react";
+import Box from "@mui/material/Box";
+import "./Grid.css";
+import "../Chart/Encours";
 
-const Item = styled(Paper)(({ theme }) => ({
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
+import QteEnRetour from "../Chart/QteEnRetour";
+import QteFabriqué from "../Chart/QteFabriqué";
 
 export default function RowAndColumnSpacing() {
-  return <Box sx={{ width: 1 }}>
-  <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={10} >
+  return (
+    <Box sx={{ width: 1 }}>
+      <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={10}>
+        <Box gridColumn="span 4" height={300} width={400} className="Box">
+          <QteFabriqué />
+        </Box>
 
-    <Box gridColumn="span 3" className='Box' >
-    
-      <GougeCharts/>
+        <Box gridColumn="span 4" height={300} width={400} className="Box">
+          <QteEnRetour />
+        </Box>
+        <Box gridColumn="span 4" className="Box"></Box>
+      </Box>
     </Box>
-    
-    <Box gridColumn="span 3" className='Box'>
-      <BarP />
-    </Box>
-    <Box gridColumn="span 3" className='Box'>
-      <SmileC/>
-    </Box>
-    <Box gridColumn="span 3" className='Box'>
-      <Item>xs=4</Item>
-    </Box>
- 
-  </Box>
-</Box>;
+  );
 }
-

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Chart from "react-apexcharts";
 import AddchartIcon from "@mui/icons-material/Addchart";
 import axios from "axios";
 import "./Chart.css";
+import QteI from "../images/PngItem_2561393.png";
 
-export default function Colone_Chart() {
+export default function QteEng() {
   const [rows, setRows] = useState([]);
 
   async function getDonnees() {
@@ -54,18 +54,15 @@ export default function Colone_Chart() {
   return (
     <div className="gaugechart">
       <div className="subnavbar">
-        <span className="titlePichart">Chart</span>
+        <span className="titlePichart">Quantité engagé </span>
         <AddchartIcon className="helpIcon" />
 
         <hr className="Separtormini" />
       </div>
-      <Chart
-        options={options}
-        series={series}
-        type="bar"
-        width={650}
-        height={350}
-      />
+      <div className="iconP">
+        <img src={QteI}  className="iconE" />
+        <span className="Comments"> Produite: pieces </span>
+      </div>
     </div>
   );
 }

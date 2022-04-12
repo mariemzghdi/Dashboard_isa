@@ -1,26 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import LinearProgress, {
-  linearProgressClasses,
-} from "@mui/material/LinearProgress";
+import RetouI from "../images/PngItem_117355.png";
 import "./Chart.css";
 import DataThresholdingIcon from "@mui/icons-material/DataThresholding";
 import axios from "axios";
-const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
-  height: 25,
-  borderRadius: 5,
-  [`&.${linearProgressClasses.colorPrimary}`]: {
-    backgroundColor:
-      theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
-  },
-  [`& .${linearProgressClasses.bar}`]: {
-    borderRadius: 10,
-    backgroundColor: theme.palette.mode === "light" ? "#1a90ff" : "#308fe8",
-  },
-}));
 
-export default function BarP() {
+export default function QteEnRetour() {
   const [rows, setRows] = useState([]);
 
   async function getDonnees() {
@@ -54,21 +38,15 @@ export default function BarP() {
     <div>
       <div className="gaugechart">
         <div className="subnavbar">
-          <span className="titlePichart">Qte Produites</span>
+          <span className="titlePichart"> Quantité en Retour </span>
           <DataThresholdingIcon className="helpIcon" />
-
           <hr className="Separtormini" />
         </div>
-
-        <Box sx={{ flexGrow: 1 }}>
+          <div className="iconP">
+            <img src={RetouI} className="iconIm" />
+            <span className="Comments"> Retour: {numAverage(Qte)} pieces </span>
+          </div>
           <br />
-          <BorderLinearProgress
-            variant="determinate"
-            value={numAverage(Qte) - 40}
-            className="LineProg"
-          />
-          <span className="Comments">Qte : {numAverage(Qte)} </span>
-        </Box>
       </div>
     </div>
   );
